@@ -18,10 +18,12 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
-volumeMounts:
+        # O volumeMounts fica DENTRO do container
+        volumeMounts:
         - name: html-volume
           mountPath: /usr/share/nginx/html
+      # O volumes fica FORA do bloco containers, mas dentro do spec do pod
       volumes:
       - name: html-volume
-        configmap:
+        configMap: # M maiúsculo aqui
           name: nginx-index-html
