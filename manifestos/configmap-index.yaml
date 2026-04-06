@@ -21,7 +21,7 @@ data:
             <p>Este site foi atualizado via <strong>GitOps (Rancher Fleet)</strong>.</p>
             <p>Commit detectado e aplicado automaticamente.</p>
             <hr>
-            <p>Infra: AWS | Orquestrador: K3s | Gestão: Rancher</p>
+            <p>Infra: AWS | Orquestrador: K3s | Gestao: Rancher</p>
         </div>
     </body>
     </html>
