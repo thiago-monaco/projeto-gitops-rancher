@@ -5,7 +5,7 @@ metadata:
   namespace: gitops-app
 spec:
   rules:
-  - host: app.COLOQUE-O-IP-DO-LB-AQUI.sslip.io
+  - host: app.3.92.119.1.sslip.io
     http:
       paths:
       - path: /
