@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-index-html
+  namespace: gitops-app
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Projeto GitOps - Thiago Monaco</title>
+        <style>
+            body { background-color: #2c3e50; color: white; text-align: center; font-family: sans-serif; padding-top: 50px; }
+            h1 { color: #18bc9c; }
+            .status { background: #34495e; padding: 20px; border-radius: 10px; display: inline-block; }
+        </style>
+    </head>
+    <body>
+        <div class="status">
+            <h1>ENTREGA FINAL - SUCESSO!</h1>
+            <p>Este site foi atualizado via <strong>GitOps (Rancher Fleet)</strong>.</p>
+            <p>Commit detectado e aplicado automaticamente.</p>
+            <hr>
+            <p>Infra: AWS | Orquestrador: K3s | Gestão: Rancher</p>
+        </div>
+    </body>
+    </html>
